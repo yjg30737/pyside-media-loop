@@ -16,10 +16,23 @@ The most important thing is, this package doesn't import my other package like t
 `pip3 install git+https://github.com/yjg30737/pyside-media-loop.git --upgrade`
 
 ## Example
+```python
+from PySide6.QtWidgets import QApplication
+from pyside_media_loop.mediaLoop import MediaLoop
+
+
+if __name__ == "__main__":
+    import sys
+
+    app = QApplication(sys.argv)
+    ex = MediaLoop()
+    ex.show()
+    app.exec()
+```
 
 ## Result
-
 Front-end
+
 ![image](https://user-images.githubusercontent.com/55078043/188292533-174d4c43-96ff-41d3-86c6-60860581e28c.png)
 
 I will improve this software(it is not an executable file just a bunch of scripts though)'s function such as supporting various file types and present the feature of this to my Youtube channel sooner or later.
