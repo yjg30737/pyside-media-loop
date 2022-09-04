@@ -15,3 +15,13 @@ The most important thing is, this package doesn't import my other package like t
 ## Setup
 `pip3 install git+https://github.com/yjg30737/pyside-media-loop.git --upgrade`
 
+## Example
+
+## Result
+
+Front-end
+![image](https://user-images.githubusercontent.com/55078043/188292533-174d4c43-96ff-41d3-86c6-60860581e28c.png)
+
+I will improve this software(it is not an executable file just a bunch of scripts though)'s function such as supporting various file types and present the feature of this to my Youtube channel sooner or later.
+
+
