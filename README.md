@@ -6,4 +6,4 @@ PySide software which can loop the media file (audio file only currently)
 * <a href="https://github.com/jiaaro/pydub">pydub</a>
 
 ## Setup
-`python -m pip install pyside-media-loop`
+`pip3 install git+https://github.com/yjg30737/pyside-media-loop.git --upgrade`
