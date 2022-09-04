@@ -19,6 +19,7 @@ setup(
     url='https://github.com/yjg30737/pyside-media-loop.git',
     install_requires=[
         'PySide6',
-        'pydub'
+        'pydub',
+        'mutagen'
     ]
 )
