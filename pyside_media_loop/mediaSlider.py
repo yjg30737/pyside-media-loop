@@ -3,6 +3,8 @@ import os
 from PySide6.QtWidgets import QSlider
 from PySide6.QtCore import Qt, Signal
 
+from pyside_media_loop.resourceHelper import setStyleSheet
+
 
 class MediaSlider(QSlider):
     pressed = Signal(int)
@@ -17,14 +19,7 @@ class MediaSlider(QSlider):
     def __initUi(self):
         self.setOrientation(Qt.Horizontal)
 
-        dirname = os.path.dirname(__file__)
-
-        css_file_path = os.path.join(dirname, 'style/slider.css')
-        css_file = open(css_file_path)
-        css_code = css_file.read()
-        css_file.close()
-
-        self.setStyleSheet(css_code)
+        setStyleSheet([self], ['style/slider.css'])
 
         self.setRange(0, 10000)
 

@@ -1,6 +1,7 @@
 import os
 
 from PySide6.QtWidgets import QWidget, QLineEdit, QSpinBox, QFormLayout
+from pyside_media_loop.resourceHelper import setStyleSheet
 
 
 class SettingsWidget(QWidget):
@@ -17,13 +18,7 @@ class SettingsWidget(QWidget):
         self.__nameLineEdit = QLineEdit()
         self.__nameLineEdit.setMaximumWidth(self.__nameLineEdit.sizeHint().width())
 
-        dirname = os.path.dirname(__file__)
-
-        css_file_path = os.path.join(dirname, 'style/lineedit.css')
-        css_file = open(css_file_path)
-        css_code = css_file.read()
-        css_file.close()
-        self.__nameLineEdit.setStyleSheet(css_code)
+        setStyleSheet([self.__nameLineEdit], ['style/lineedit.css'])
 
         lay = QFormLayout()
         lay.addRow('Loop Count', self.__loopCntSpinBox)

@@ -4,6 +4,7 @@ from PySide6.QtCore import Signal
 from PySide6.QtWidgets import QWidget, QPushButton, QHBoxLayout, QFileDialog, QLabel, QApplication
 
 from pyside_media_loop.findPathLineEdit import FindPathLineEdit
+from pyside_media_loop.resourceHelper import setStyleSheet
 
 
 class FindPathWidget(QWidget):
@@ -26,21 +27,8 @@ class FindPathWidget(QWidget):
 
         self.__pathFindBtn = QPushButton('Find...')
 
-        dirname = os.path.dirname(__file__)
-
-        css_file_path = os.path.join(dirname, 'style/lineedit.css')
-        css_file = open(css_file_path)
-        css_code = css_file.read()
-        css_file.close()
-
-        self.__pathLineEdit.setStyleSheet(css_code)
-
-        css_file_path = os.path.join(dirname, 'style/button.css')
-        css_file = open(css_file_path)
-        css_code = css_file.read()
-        css_file.close()
-
-        self.__pathFindBtn.setStyleSheet(css_code)
+        setStyleSheet([self.__pathLineEdit, self.__pathFindBtn],
+                      ['style/lineedit.css', 'style/button.css'])
 
         self.__pathFindBtn.clicked.connect(self.__find)
 
