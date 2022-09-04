@@ -5,11 +5,11 @@ from PySide6.QtCore import Qt
 
 from pydub import AudioSegment
 
-from settingsWidget import SettingsWidget
-from toolWidget import ToolWidget
+from pyside_media_loop.settingsWidget import SettingsWidget
+from pyside_media_loop.toolWidget import ToolWidget
 
-from musicPlayerWidget import MusicPlayerWidget
-from findPathWidget import FindPathWidget
+from pyside_media_loop.musicPlayerWidget import MusicPlayerWidget
+from pyside_media_loop.findPathWidget import FindPathWidget
 
 
 class MediaLoop(QMainWindow):

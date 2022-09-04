@@ -3,7 +3,7 @@ import os
 from PySide6.QtCore import Signal
 from PySide6.QtWidgets import QWidget, QPushButton, QHBoxLayout, QFileDialog, QLabel, QApplication
 
-from findPathLineEdit import FindPathLineEdit
+from pyside_media_loop.findPathLineEdit import FindPathLineEdit
 
 
 class FindPathWidget(QWidget):

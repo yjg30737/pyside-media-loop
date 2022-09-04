@@ -7,7 +7,7 @@ from PySide6.QtCore import QUrl, Signal
 from PySide6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PySide6.QtWidgets import QWidget, QLabel, QHBoxLayout, QVBoxLayout, QPushButton
 
-from mediaSlider import MediaSlider
+from pyside_media_loop.mediaSlider import MediaSlider
 from PySide6.QtCore import Qt
 
 

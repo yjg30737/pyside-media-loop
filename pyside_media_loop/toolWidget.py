@@ -4,7 +4,7 @@ from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QWidget, QPushButton, QHBoxLayout
 from PySide6.QtCore import Qt, Signal
 
-from fromToLblWidget import FromToLblWidget
+from pyside_media_loop.fromToLblWidget import FromToLblWidget
 
 
 class ToolWidget(QWidget):
