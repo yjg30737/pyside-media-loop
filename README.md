@@ -5,7 +5,7 @@ You can see a lot of 30 minutes or 10 hrs loop media in Youtube, this works well
 
 My first PySide software.
 
-The most important thing is, this package doesn't import my other package like the others such as <a href="https://github.com/yjg30737/pyqt-dark-notepad.git">dark notepad</a>(which will be very confusing).
+The most important thing is, this package doesn't import my other package like the others such as <a href="https://github.com/yjg30737/pyqt-dark-notepad.git">Dark Notepad</a>(which will be very confusing).
 
 ## Requirements
 * PySide6
