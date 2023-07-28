@@ -119,3 +119,12 @@ class MediaLoop(QMainWindow):
 
         path = filename.replace('/', '\\')
         subprocess.Popen(r'explorer /select,"' + path + '"')
+
+
+if __name__ == "__main__":
+    import sys
+
+    app = QApplication(sys.argv)
+    ex = MediaLoop()
+    ex.show()
+    app.exec()

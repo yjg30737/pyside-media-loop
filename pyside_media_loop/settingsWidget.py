@@ -11,7 +11,7 @@ class SettingsWidget(QWidget):
 
     def __initUi(self):
         self.__loopCntSpinBox = QSpinBox()
-        self.__loopCntSpinBox.setMinimum(2)
+        self.__loopCntSpinBox.setMinimum(1)
         self.__loopCntSpinBox.setMaximum(10000)
         self.__loopCntSpinBox.setMaximumWidth(self.__loopCntSpinBox.sizeHint().width())
 
